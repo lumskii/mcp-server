@@ -8,11 +8,12 @@
     "server:build": "tsc",
     "server:build:watch": "tsc --watch",
     "server:dev": "tsx src/server.ts",
-    "server:inspect": "DANGEROUSLY_OMIT_AUTH=true npx @modelcontextprotocol/inspector tsx src/server.ts",
+    "server:inspect": "set DANGEROUSLY_OMIT_AUTH=true &&npx @modelcontextprotocol/inspector tsx src/server.ts",
     "client:dev": "tsx src/client.ts"
   },
   "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.16.0"
+    "@modelcontextprotocol/sdk": "^1.16.0",
+    "zod": "^3.25.76"
   },
   "devDependencies": {
     "@modelcontextprotocol/inspector": "^0.16.1",
