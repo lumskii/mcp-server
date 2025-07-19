@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "mcp-server": {
+      "command": "tsx",
+      "args": ["src/server.ts"],
+      "cwd": "/workspaces/mcp-server"
+    }
+  }
+}

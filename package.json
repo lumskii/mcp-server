@@ -1,0 +1,33 @@
+{
+  "name": "mcp-server",
+  "version": "1.0.0",
+  "description": "A Model Context Protocol server",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "server:build": "tsc",
+    "server:build:watch": "tsc --watch",
+    "server:dev": "tsx src/server.ts",
+    "server:inspect": "DANGEROUSLY_OMIT_AUTH=true npx @modelcontextprotocol/inspector tsx src/server.ts",
+    "client:dev": "tsx src/client.ts"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.16.0"
+  },
+  "devDependencies": {
+    "@modelcontextprotocol/inspector": "^0.16.1",
+    "@types/node": "^20.19.9",
+    "tsx": "^3.14.0",
+    "typescript": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "server"
+  ],
+  "author": "",
+  "license": "MIT"
+}
